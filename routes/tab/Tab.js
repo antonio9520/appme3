@@ -1,12 +1,14 @@
 import * as React from 'react';
 import {Image} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Home, Perfil, Pedidos, Carrito, Promo} from '../../views';
+import {CarritoStack, PerfilStack, PromoStack, PedidosStack} from '../stacks';
+import {DrawerHome} from '../drawers/MainDrawer';
 import IconHome from '../../resources/tabsicon/Menu-Home.png';
 import IconPromo from '../../resources/tabsicon/Menu-Promos.png';
 import IconCarrito from '../../resources/tabsicon/Menu-Carrito.png';
 import IconPedidos from '../../resources/tabsicon/Menu-Pedidos.png';
 import IconPerfil from '../../resources/tabsicon/Menu-Usuarios.png';
+
 const Tab = createBottomTabNavigator();
 
 const TabNav = () => {
@@ -14,7 +16,7 @@ const TabNav = () => {
     <Tab.Navigator>
       <Tab.Screen
         name="Home"
-        component={Home}
+        component={DrawerHome}
         options={{
           title: 'Inicio',
           tabBarIcon: () => (
@@ -28,7 +30,7 @@ const TabNav = () => {
       />
       <Tab.Screen
         name="Promo"
-        component={Promo}
+        component={PromoStack}
         options={{
           title: 'Promociones',
           tabBarIcon: () => (
@@ -42,7 +44,7 @@ const TabNav = () => {
       />
       <Tab.Screen
         name="Carrito"
-        component={Carrito}
+        component={CarritoStack}
         options={{
           title: 'Carrito',
           tabBarIcon: () => (
@@ -56,7 +58,7 @@ const TabNav = () => {
       />
       <Tab.Screen
         name="Pedidos"
-        component={Pedidos}
+        component={PedidosStack}
         options={{
           title: 'Pedidos',
           tabBarIcon: () => (
@@ -70,7 +72,7 @@ const TabNav = () => {
       />
       <Tab.Screen
         name="Perfil"
-        component={Perfil}
+        component={PerfilStack}
         options={{
           title: 'Perfil',
           tabBarIcon: () => (

@@ -22,7 +22,7 @@ export default function SplashHome(props) {
       }).start(() => {
         setTimeout(
           () => {
-            navigation.navigate('Welcome');
+            navigation.navigate('TabNav');
           },
           500,
           this,
