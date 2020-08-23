@@ -12,8 +12,8 @@ import {View, TouchableHighlight, Image, Text} from 'react-native';
 import iconfa from '../../../../resources/imghompro/Icon-Favorito-Active.png';
 import iconfa1 from '../../../../resources/imghompro/Icon-Favorito.png';
 import styles from '../../Style';
-import firestore from 'firebase/firestore';
 import firebase from '../../../../firebase/Firebase';
+import firestore from 'firebase/firestore';
 
 firebase.firestore().settings({experimentalForceLongPolling: true});
 

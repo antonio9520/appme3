@@ -24,12 +24,11 @@ import iconpr3 from '../../resources/imghompro/Icono-TipoProdcuto-3.png';
 import iconpr3act from '../../resources/imghompro/Icono-TipoProdcutoActive-3.png';
 import iconpr4 from '../../resources/imghompro/Icono-TipoProdcuto-4.png';
 import iconpr4act from '../../resources/imghompro/Icono-TipoProdcutoActive-4.png';
-import iconfa from '../../resources/imghompro/Icon-Favorito-Active.png';
 import iconcar from '../../resources/imghompro/TotalBar-Carro.png';
-import firebase from '../../firebase/Firebase';
 
 import {Alimentacion, Dormitorio, Viajes, Baño} from './components';
 import {useSelector} from 'react-redux';
+import firebase from '../../firebase/Firebase';
 import 'firebase/firestore';
 
 firebase.firestore().settings({experimentalForceLongPolling: true});
@@ -327,8 +326,7 @@ function ValoraCarrito(props) {
         <TouchableHighlight
           style={styles.btncarrito}
           underlayColor="transparent"
-          // onPress={() => navigation.navigate('HomePro4')}
-        >
+          onPress={() => navigation.navigate('Carrito')}>
           <View style={styles.row2}>
             <Text style={styles.txtbtncarro}>Carro</Text>
             <Image source={iconcar} style={styles.ticonnot12} />
