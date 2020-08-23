@@ -3,9 +3,12 @@ import React, {useState, useEffect} from 'react';
 import {StyleSheet, Text} from 'react-native';
 import Navigator from './routes/MainNavigator';
 import StartNavigator from './routes/StartNavigator';
-import {decode, encode} from 'base-64';
+// import {decode, encode} from 'base-64';
 import firebase from './firebase/Firebase';
 import 'firebase/auth';
+import {Provider} from 'react-redux';
+import store from './redux/store/store';
+
 // if (!global.btoa) global.btoa = encode;
 // if (!global.atob) global.atob = decode;
 // import {YellowBox} from 'react-native';
@@ -21,7 +24,13 @@ const App = () => {
   }, []);
 
   if (user === undefined) return null;
-  return <>{user ? <Navigator /> : <StartNavigator />}</>;
+  return (
+    <>
+      <Provider store={store}>
+        {user ? <Navigator /> : <StartNavigator />}
+      </Provider>
+    </>
+  );
 };
 
 const styles = StyleSheet.create({});
