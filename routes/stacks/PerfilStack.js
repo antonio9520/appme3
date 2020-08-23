@@ -1,6 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Perfil} from '../../views';
+import {EditarPerfil} from '../../views/perfil/views';
 
 const Stack = createStackNavigator();
 
@@ -11,6 +12,7 @@ const PerfilStack = () => {
         headerShown: false,
       }}>
       <Stack.Screen name="Perfil" component={Perfil} />
+      <Stack.Screen name="EditarPerfil" component={EditarPerfil} />
     </Stack.Navigator>
   );
 };

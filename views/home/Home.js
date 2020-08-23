@@ -24,9 +24,13 @@ import iconpr3 from '../../resources/imghompro/Icono-TipoProdcuto-3.png';
 import iconpr3act from '../../resources/imghompro/Icono-TipoProdcutoActive-3.png';
 import iconpr4 from '../../resources/imghompro/Icono-TipoProdcuto-4.png';
 import iconpr4act from '../../resources/imghompro/Icono-TipoProdcutoActive-4.png';
-import iconcar from '../../resources/imghompro/TotalBar-Carro.png';
-
-import {Alimentacion, Dormitorio, Viajes, Baño} from './components';
+import {
+  Alimentacion,
+  Dormitorio,
+  Viajes,
+  Baño,
+  ValorCarrito,
+} from './components';
 import {useSelector} from 'react-redux';
 import firebase from '../../firebase/Firebase';
 import 'firebase/firestore';
@@ -306,33 +310,12 @@ export default function Home(props) {
           </View>
         </ScrollView>
         {valorTotalPagar > 0 ? (
-          <ValoraCarrito
+          <ValorCarrito
             navigation={navigation}
             valorTotalPagar={valorTotalPagar}
           />
         ) : null}
       </View>
     </>
-  );
-}
-
-function ValoraCarrito(props) {
-  const {navigation, valorTotalPagar} = props;
-
-  return (
-    <View style={styles.rowbtncarrito}>
-      <View style={styles.itemCarrito}>
-        <Text style={styles.txttotalbtncarrito}>Total: ${valorTotalPagar}</Text>
-        <TouchableHighlight
-          style={styles.btncarrito}
-          underlayColor="transparent"
-          onPress={() => navigation.navigate('Carrito')}>
-          <View style={styles.row2}>
-            <Text style={styles.txtbtncarro}>Carro</Text>
-            <Image source={iconcar} style={styles.ticonnot12} />
-          </View>
-        </TouchableHighlight>
-      </View>
-    </View>
   );
 }

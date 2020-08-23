@@ -1,3 +1,3 @@
-import VerMas from './VerMas';
+import VerMas from './verMas/VerMas';
 
 export {VerMas};

@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-  
+
 const styles = StyleSheet.create({
   ticonmenup: {
     width: 30,
@@ -216,6 +216,7 @@ const styles = StyleSheet.create({
   },
   textpedidosperfil: {
     textAlign: 'center',
+    fontWeight: '600',
     marginTop: -37,
     marginLeft: 20,
     color: '#B5BECE',
@@ -223,6 +224,7 @@ const styles = StyleSheet.create({
   },
   textpedidosperfil1: {
     textAlign: 'center',
+    fontWeight: '600',
     marginTop: -37,
     marginLeft: 35,
     color: '#B5BECE',
@@ -234,6 +236,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     borderColor: '#EDF0F4',
     flexDirection: 'row',
+    borderBottomWidth: 1,
     backgroundColor: 'transparent',
     height: 36,
   },

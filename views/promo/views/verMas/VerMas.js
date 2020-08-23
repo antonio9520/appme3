@@ -1,14 +1,14 @@
 import React from 'react';
 import {View, Text, TouchableHighlight, Image, ScrollView} from 'react-native';
 import styles from './Style';
-import promoimage from '../../../resources/imgHpromo/Producto-Promo-WuaWua.png';
-import iconpr5 from '../../../resources/imgHpromo/Producto-Home-1.png';
-import iconpr6 from '../../../resources/imgHpromo/Producto-Home-2.png';
-import iconpr7 from '../../../resources/imgHpromo/Producto-Home-3.png';
-import iconpr8 from '../../../resources/imgHpromo/Producto-Home-4.png';
-import iconfa1 from '../../../resources/imghompro/Icon-Favorito-Active.png';
+import promoimage from '../../../../resources/imgHpromo/Producto-Promo-WuaWua.png';
+import iconpr5 from '../../../../resources/imgHpromo/Producto-Home-1.png';
+import iconpr6 from '../../../../resources/imgHpromo/Producto-Home-2.png';
+import iconpr7 from '../../../../resources/imgHpromo/Producto-Home-3.png';
+import iconpr8 from '../../../../resources/imgHpromo/Producto-Home-4.png';
+import iconfa1 from '../../../../resources/imghompro/Icon-Favorito-Active.png';
 
-export default function vmpromo(props) {
+export default function VerMas(props) {
   const {navigation} = props;
   return (
     <View style={styles.container}>

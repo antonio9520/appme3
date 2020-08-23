@@ -11,9 +11,9 @@ import {
 import {View, TouchableHighlight, Image, Text} from 'react-native';
 import iconfa from '../../../../resources/imghompro/Icon-Favorito-Active.png';
 import iconfa1 from '../../../../resources/imghompro/Icon-Favorito.png';
-import styles from '../../Style';
+import styles from './Style';
 import firebase from '../../../../firebase/Firebase';
-import firestore from 'firebase/firestore';
+
 
 firebase.firestore().settings({experimentalForceLongPolling: true});
 
@@ -117,16 +117,16 @@ const Producto = (props) => {
   }
 
   const [imageTrabajo, setImageTrabajo] = useState(null);
-  // useEffect(() => {
-  //   const image = images[0];
-  //   firebase
-  //     .storage()
-  //     .ref(`trabajos-images/${image}`)
-  //     .getDownloadURL()
-  //     .then((result) => {
-  //       setImageTrabajo(result);
-  //     });
-  // });
+  useEffect(() => {
+    const image = images[0];
+    firebase
+      .storage()
+      .ref(`trabajos-images/${image}`)
+      .getDownloadURL()
+      .then((result) => {
+        setImageTrabajo(result);
+      });
+  });
   useEffect(() => {
     setCantidad(0);
   }, []);
