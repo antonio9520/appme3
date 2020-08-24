@@ -3,14 +3,68 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   image: {
     resizeMode: 'cover',
-    justifyContent: 'center',
-    alignItems: 'center',
+    height: '100%',
   },
   container: {
     flex: 1,
-    flexDirection: 'column',
+  },
+
+  contLogo: {
+    flex: 6,
+
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  mgb: {
     width: '100%',
   },
+  txtstit: {
+    color: '#1DAFF1',
+    textAlign: 'center',
+    fontSize: 14,
+    fontFamily: 'RobotoSlab-Medium',
+    marginBottom: 35,
+  },
+  txtTitulo: {
+    color: '#1DAFF1',
+    fontSize: 25,
+    fontFamily: 'RobotoSlab-Bold',
+    alignItems: 'center',
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  contForm: {
+    flex: 5.8,
+    justifyContent: 'space-around',
+  },
+  btnIngresar: {
+    alignItems: 'center',
+  },
+  tamsep: {
+    width: '90%',
+    alignSelf: 'center',
+    height: 22,
+  },
+  contEnlaces: {
+    flex: 6,
+    // backgroundColor: 'blue',
+  },
+  subContLogo: {
+    width: '80%',
+  },
+  footer: {
+    width: '40%',
+    height: 5,
+    borderRadius: 20,
+    backgroundColor: '#1DAFF1',
+  },
+  contfooter: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    marginBottom: 10,
+  },
+
   passwordContainer: {
     flexDirection: 'row',
     borderBottomWidth: 0.2,
@@ -43,38 +97,22 @@ const styles = StyleSheet.create({
     top: 10,
     alignItems: 'center',
   },
-  txtTitulo: {
-    color: '#1DAFF1',
-    fontSize: 25,
-    fontWeight: 'bold',
-    alignItems: 'center',
-    textAlign: 'center',
-    marginBottom: 10,
-  },
+
   txtTitulo1: {
     color: '#4BBCF2',
     fontSize: 20,
-    fontWeight: 'bold',
+    fontFamily: 'RobotoSlab-Bold',
     alignItems: 'center',
     textAlign: 'center',
-    marginBottom: 10,
-    top: -130,
   },
-  txtstit: {
-    color: '#1DAFF1',
-    textAlign: 'center',
-    fontSize: 16,
-    width: 230,
-    marginBottom: 35,
-  },
+
   txtstit3: {
     color: '#1DAFF1',
     textAlign: 'center',
     fontSize: 16,
-    width: 230,
-    marginBottom: 35,
-    top: -70,
-    marginVertical: 10,
+    fontFamily: 'RobotoSlab-Bold',
+    marginTop: 10,
+    marginBottom: 20,
   },
   tamicon1: {
     width: 28,
@@ -96,21 +134,16 @@ const styles = StyleSheet.create({
   txtstit1: {
     color: '#4BBCF2',
     textAlign: 'center',
-    top: -47,
-    marginBottom: 15,
+    marginVertical: 15,
+    fontFamily: 'RobotoSlab-Medium',
   },
   txtstit2: {
-    top: -14,
     color: '#4BBCF2',
     textAlign: 'center',
     fontSize: 16,
-    width: 235,
+    fontFamily: 'RobotoSlab-Bold',
   },
-  mgb: {
-    marginTop: 320,
-    marginBottom: 10,
-    alignSelf: 'center',
-  },
+
   btnSeguir: {
     backgroundColor: '#1DB0F1',
     borderRadius: 10,
@@ -118,6 +151,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: 350,
     marginTop: 5,
+    elevation: 10,
   },
   textbutton: {
     fontWeight: 'bold',
@@ -125,30 +159,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     fontSize: 20,
   },
-  tamsep: {
-    marginVertical: 15,
-    width: 350,
-    alignSelf: 'center',
-    height: 20,
-  },
+
   row: {
-    top: -33,
     flexDirection: 'row',
-    alignItems: 'center',
-    marginLeft: 125,
-    justifyContent: 'space-between',
-    marginVertical: 25,
+    justifyContent: 'center',
+    marginVertical: 20,
   },
-  box: {
-    flex: 1,
-    width: 10,
-    backgroundColor: 'transparent',
-    marginLeft: -52,
+  rowIn: {
+    width: '50%',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
   },
+
   mgb1: {
     width: 50,
     height: 50,
-    marginBottom: 5,
   },
   passwordContainer1: {
     flexDirection: 'row',

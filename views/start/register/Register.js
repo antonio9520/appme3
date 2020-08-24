@@ -7,16 +7,16 @@ import {
   ImageBackground,
   TouchableHighlight,
 } from 'react-native';
-import backappme from '../../images/AppMe-bg-blue2.png';
-import imguser from '../../images/imgiconform/Register-Icon-Name.png';
-import imgpass from '../../images/imgiconform/Register-Icon-Password.png';
-import imgemail from '../../images/imgiconform/Register-Icon-Email.png';
-import imgpho from '../../images/imgiconform/Register-Icon-Phone.png';
-import imgub1 from '../../images/imgiconform/Register-Icon-Address.png';
-import imgub2 from '../../images/imgiconform/Register-Icon-Address-Confirm.png';
+import backappme from '../../../resources/AppMe-bg-blue2.png';
+import imguser from '../../../resources/imgiconform/Register-Icon-Name.png';
+import imgpass from '../../../resources/imgiconform/Register-Icon-Password.png';
+import imgemail from '../../../resources/imgiconform/Register-Icon-Email.png';
+import imgpho from '../../../resources/imgiconform/Register-Icon-Phone.png';
+import imgub1 from '../../../resources/imgiconform/Register-Icon-Address.png';
+import imgub2 from '../../../resources/imgiconform/Register-Icon-Address-Confirm.png';
 import styles from './Style';
-import {validateEmail} from './utilidades';
-import firebase2 from '../../firebase/Firebase';
+import {validateEmail} from '../../../utils';
+import firebase2 from '../../../firebase/Firebase';
 import * as firebase from 'firebase';
 import firebase1 from 'firebase/app';
 
