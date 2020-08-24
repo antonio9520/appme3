@@ -36,7 +36,9 @@ const Perfil = (props) => {
         </TouchableHighlight>
         <TouchableHighlight
           style={styles.mgbtmp3}
-          onPress={() => navigation.navigate('EditarPerfil')}>
+          onPress={() =>
+            navigation.navigate('OverPerfil', {name: 'EditarPerfil'})
+          }>
           <Image source={iconedi} style={styles.ticonnot} />
         </TouchableHighlight>
       </View>

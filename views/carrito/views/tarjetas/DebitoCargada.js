@@ -10,11 +10,9 @@ import porteriaoff from '../../../../resources/imgcarrito/Icono-TipoDelivery-2-O
 import iconpr2 from '../../../../resources/imghompro/Icono-TipoProdcuto-2.png';
 import iconpr3 from '../../../../resources/imghompro/Icono-TipoProdcuto-3.png';
 import vermas from '../../../../resources/imgcarrito/Icon-VerMas.png';
-import tdebitoff from '../../../../resources/imgcarrito/Icono-FormadePago-Debito-Off.png';
-import tcreditoff from '../../../../resources/imgcarrito/Icono-FormadePago-Credito-Off.png';
-import effectivoff from '../../../../resources/imgcarrito/Icono-FormadePago-Efectivo-Off.png';
+import webpay from '../../../../resources/imgcarrito/Icono-Pago-Establecido-Debito-1.png';
 
-export default function resumen(props) {
+export default function DebitoCargada(props) {
   const {navigation} = props;
 
   return (
@@ -75,30 +73,10 @@ export default function resumen(props) {
         </View>
       </View>
       <View style={styles.vformadepago}>
-        <Text style={styles.txtproductos}>Forma de pago</Text>
-        <View style={styles.vimagenes1}>
-          <View style={styles.vimgtipo1}>
-            <TouchableHighlight
-              style={styles.imgtipo1}
-              onPress={() => navigation.navigate('Debito1')}
-              underlayColor="#4BB76C">
-              <Image source={tdebitoff} style={styles.imgtipo1} />
-            </TouchableHighlight>
-            <Text style={styles.txttipo}>T. Debito</Text>
-          </View>
-          <View style={styles.vimgtipo1}>
-            <TouchableHighlight
-              style={styles.imgtipo1}
-              onPress={() => navigation.navigate('Credito1')}
-              underlayColor="#4BB76C">
-              <Image source={tcreditoff} style={styles.imgtipo1} />
-            </TouchableHighlight>
-            <Text style={styles.txttipo}>T. Crédito</Text>
-          </View>
-          <View style={styles.vimgtipo1}>
-            <Image source={effectivoff} style={styles.imgtipo1} />
-            <Text style={styles.txttipo}>Efectivo</Text>
-          </View>
+        <View style={styles.ventregaest}>
+          <Image source={webpay} style={styles.iconprod} />
+          <Text style={styles.ntarjeta}> XXXXXXXXXXXXX0325</Text>
+          <Text style={styles.txtcambiar1}>Cambiar</Text>
         </View>
       </View>
       <TouchableHighlight

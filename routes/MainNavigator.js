@@ -9,7 +9,9 @@ const Drawer = createDrawerNavigator();
 export default () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator drawerContent={(props) => <CustomDrawer {...props} />}>
+      <Drawer.Navigator
+        drawerType={'slide'}
+        drawerContent={(props) => <CustomDrawer {...props} />}>
         <Drawer.Screen name="Stacks" component={Stacks} />
       </Drawer.Navigator>
     </NavigationContainer>

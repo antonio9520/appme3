@@ -1,18 +1,18 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Perfil} from '../../views';
+import {Ajustes} from '../../../views/home/views/';
 
 const Stack = createStackNavigator();
 
-const PerfilStack = () => {
+const OverHome = () => {
   return (
     <Stack.Navigator
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name="Perfil" component={Perfil} />
+      <Stack.Screen name="AjustesHome" component={Ajustes} />
     </Stack.Navigator>
   );
 };
 
-export default PerfilStack;
+export default OverHome;

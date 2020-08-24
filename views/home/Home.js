@@ -186,8 +186,9 @@ export default function Home(props) {
 
           <TouchableHighlight
             style={styles.mgbtmp2}
-            // onPress={() => navigation.navigate('Ajuste')}
-          >
+            onPress={() =>
+              navigation.navigate('OverHome', {name: 'AjustesHome'})
+            }>
             <Image source={iconfav} style={styles.iconosarriba} />
           </TouchableHighlight>
         </View>

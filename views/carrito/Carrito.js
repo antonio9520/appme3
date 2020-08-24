@@ -88,7 +88,8 @@ const Carrito = (props) => {
       <TouchableHighlight
         style={{bottom: 5}}
         underlayColor="#FFFFFF"
-        onPress={() => navigation.navigate('Agendar')}>
+        onPress={() => navigation.navigate('OverCarrito', {name: 'Agendar'})}>
+          
         <View style={styles.pagarContainer}>
           <View style={styles.cajairapagar}>
             <View style={styles.boxcantidad}>

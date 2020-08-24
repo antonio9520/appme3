@@ -64,21 +64,27 @@ const Promo = (props) => {
           <View style={styles.boxpromo}>
             <TouchableHighlight
               underlayColor="transparent"
-              onPress={() => navigation.navigate('VerMas')}>
+              onPress={() =>
+                navigation.navigate('OverPromo', {name: 'VerMas'})
+              }>
               <Image source={promoimage} style={styles.image} />
             </TouchableHighlight>
           </View>
           <View style={styles.boxpromo}>
             <TouchableHighlight
               underlayColor="transparent"
-              onPress={() => navigation.navigate('VerMas')}>
+              onPress={() =>
+                navigation.navigate('PromoVerMas', {name: 'VerMas'})
+              }>
               <Image source={promoimage1} style={styles.image} />
             </TouchableHighlight>
           </View>
           <View style={styles.boxpromo}>
             <TouchableHighlight
               underlayColor="transparent"
-              onPress={() => navigation.navigate('VerMas')}>
+              onPress={() =>
+                navigation.navigate('PromoVerMas', {name: 'VerMas'})
+              }>
               <Image source={promoimage} style={styles.image} />
             </TouchableHighlight>
           </View>
